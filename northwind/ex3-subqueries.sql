@@ -1,11 +1,11 @@
 -- -- ex 1
 
--- SELECT ProductName, UnitPrice 
--- FROM Products 
--- WHERE UnitPrice = (
---   SELECT MAX(UnitPrice)
---   FROM Products
--- );
+SELECT ProductName, UnitPrice 
+FROM Products 
+WHERE UnitPrice = (
+  SELECT MAX(UnitPrice)
+  FROM Products
+);
 
 -- -- ex 2 
 
